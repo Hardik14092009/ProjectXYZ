@@ -3,7 +3,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.chrome.options import Options
 import urllib.parse
-
+#It is nessesary that you have chrome already installed
 url = "http://data.phishtank.com/data/0ddf0d53ab0561d772c99f95439fb9af535e795e5fba5985d57f800ed7e5f11b/online-valid.json.bz2"
 
 
@@ -14,7 +14,7 @@ urls = ['https://thepiratebay.org/', 'https://yts.mx/', 'https://1337x.to/', 'ht
 
 chrome_options = Options()
 chrome_options.add_experimental_option( "prefs", {'safebrowsing.enabled':1})
-driver = webdriver.Chrome("C:\\Users\\bassi\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe", chrome_options=chrome_options)
+driver = webdriver.Chrome("path of chromedriver.exe", chrome_options=chrome_options)
 driver.get('https://www.bing.com/')
 ##print(myvar)
 while True:
